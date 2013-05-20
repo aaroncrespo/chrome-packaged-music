@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lucida Grande, Arial, sans-serif;
+}
+
+#webview {
+   position: absolute;
+  -webkit-flex: 1;
+}
+
+#sad-webview,
+webview {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Due to http://crbug.com/156219 we can't use display: none */
+#sad-webview,
+.exited webview {
+  visibility: hidden;
+}
+
+.exited #sad-webview {
+  visibility: visible;
+  background: #343f51;
+  text-align: center;
+  color: #fff;
+}
+
+#sad-webview h2 {
+  font-size: 14px;
+}
+
+#sad-webview p {
+  font-size: 11px;
+}
+
+#sad-webview-icon {
+  font-size: 96px;
+  margin-bottom: 10px;
+}
+
+/* Variant of the crashed page when the process is intentionally killed (in that
+case we use a different background color and label). */
+.exited #sad-webview #killed-label {
+  display: none;
+}
+
+.killed #sad-webview {
+  background: #393058;
+}
+
+.killed #sad-webview #killed-label {
+  display: block;
+}
+
+.killed #sad-webview #crashed-label {
+  display: none;
+}
