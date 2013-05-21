@@ -1,13 +1,22 @@
 {
   "manifest_version": 2,
-  "name": "Player",
+  "description": "A Google Play Music App",
+  "name": "Google Play Music",
   "version": "1",
   "minimum_chrome_version": "26",
-  "permissions": ["webview","https://play.google.com/"],
+  "permissions": [
+    "webview",
+    "https://play.google.com/"
+  ],
+  "offline_enabled": false,
   "app": {
-   "background": {
-     "scripts": ["main.js"]
-   },
-   "icons":{"128": "icon.webp"}
+    "background": {
+      "scripts": ["main.js"]
+    }
+  },
+  "icons": {
+    "16": "icon.webp",
+    "48": "icon.webp",
+    "128": "icon.webp"
   }
 }

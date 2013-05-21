@@ -27,6 +27,8 @@ function runApp() {
     bounds: {
       'width': 1024,
       'height': 768
-    }
+    },
+    // 'frame': 'chrome',
+    'id': 'chrome.package.player.music'
   });
 }
