@@ -4,6 +4,12 @@ body {
   font-family: Lucida Grande, Arial, sans-serif;
 }
 
+#loading {
+  width:100px;
+  color: white;
+  background-color: red;
+}
+
 #webview {
    position: absolute;
   -webkit-flex: 1;

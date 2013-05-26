@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="player.css">
+    <link rel="stylesheet" href="stylesheets/player.css">
     <script src="player.js"></script>
   <body>
 
-  <webview id="webview" src="https://play.google.com/music" width="100%" height="100%"></webview>
+  <div id="loading"></div>
+  <webview id="player" src="https://play.google.com/music" width="100%" height="100%" partition="persist:chrome-package-player-music">
+  </webview>
     <div id="sad-webview">
       <div id="sad-webview-icon">&#9762;</div>
       <h2 id="crashed-label">Aw, Snap!</h2>
